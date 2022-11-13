@@ -1,4 +1,4 @@
-import { Container } from '../../styles/GlobalStyles';
+import { Container } from '../../styles/Global-Styles';
 import { Title } from './styled';
 
 function Header() {

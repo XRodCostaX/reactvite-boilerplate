@@ -2,30 +2,38 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "jest": true
+    "jest": true,
+    "node": true
   },
   "extends": [
+    "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "airbnb",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
+    "plugin:storybook/recommended",
     "plugin:prettier/recommended",
     "prettier"
   ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
   "parser": "@typescript-eslint/parser",
+  // "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 12,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "plugins": [
     "react",
+    "prettier",
     "react-hooks",
     "@typescript-eslint",
-    "eslint-plugin-import-helpers",
-    "prettier"
+    "eslint-plugin-import-helpers"
   ],
   "rules": {
     "quotes": [
@@ -111,8 +119,8 @@
   "overrides": [
     {
       "files": [
-        "bin/*.js, ",
-        "lib/*.js, "
+        "bin/*.js, .ts ",
+        "lib/*.js, .ts "
       ],
       "excludedFiles": "*.test.js",
       "rules": {

@@ -1,5 +1,5 @@
 import Login from './pages/Login';
-import GlobalStyles from './styles/GlobalStyles';
+import { GlobalStyles } from './styles/Global-Styles';
 
 function App() {
   return (
