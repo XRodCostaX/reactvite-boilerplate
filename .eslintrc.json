@@ -22,6 +22,7 @@
   },
   "plugins": [
     "react",
+    "react-hooks",
     "@typescript-eslint",
     "eslint-plugin-import-helpers",
     "prettier"
@@ -49,6 +50,8 @@
     ],
     "class-methods-use-this": "off",
     "import/prefer-default-export": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "no-shadow": "off",
     "no-console": "off",
     "no-useless-constructor": "off",

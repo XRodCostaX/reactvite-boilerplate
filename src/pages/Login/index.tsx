@@ -1,14 +1,14 @@
 import { Container } from '../../styles/GlobalStyles';
 import { Title } from './styled';
 
-function Header() {
+function Login() {
   return (
     <Container>
       <Title>
-        <h1>Header</h1>
+        <h1>Login</h1>
       </Title>
     </Container>
   );
 }
 
-export default Header;
+export default Login;
